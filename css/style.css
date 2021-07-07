@@ -1,0 +1,132 @@
+* { /*este asterisco es selector universal, aplica a todo, lo que hago con esto es sacar lo que viene x defecto*/
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+body { /*pongo acá las características generales que va a tener todo el body, si quiero algo específico, dps se sobreescribe esto*/
+    font-family:'Roboto','sans-serif';
+    font-weight: 700px;
+    color: white;
+    background-color:#E5E5E5;
+}
+
+img { /*esto lo que hace es indicar que todas las imágenes quiero q ocupen el 100% del padre, esto se hace para que las media-query*/
+    max-width:100%;
+} 
+
+li { /*acá aclaro li porque quiero que abarque tanto a las listas ordenadas como desordenadas*/
+    list-style-type: none;
+    ;
+}
+
+a{ /*por defecto, los a vienen con decoration: underline, pero no lo quiero*/
+    text-decoration: none;
+    line-height: 2rem;
+    color: white;
+    font-weight: normal;
+    padding: 10px;
+}
+
+.fuente-roja{
+    color: #FC200C;
+}
+.fuente-verde{
+    color:#39B24A;
+}
+
+.Top-5, h3{
+    color:black;
+}
+
+/* HEADER-&-FOOTER*/    
+
+.header-main-container {
+    align-items: center;
+}
+
+header, footer { /*la ',' sireve para agrupar, si no estuviera, estaría diciendo que el footer es hijo del header*/
+    background-color: #222222;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+}
+
+.header-main-container, .container-footer {
+    display:flex;
+    justify-content:space-between;
+    max-width: 1200px ;
+    padding: 20px 20px; 
+    margin: 0 auto; /*esto lo que hace es CENTRAR en contenido dentro del máximo que le dimos antes*/
+}
+
+.container-header-left, .logo-pizza-front {
+    display:flex;
+    align-items: center;
+}
+
+.links-menu-header{
+    display: flex;
+}
+
+
+
+/*MAIN*/
+.main-container {  
+    align-items: center;
+    display:flex;
+    max-width:1200px;
+    margin:0 auto;
+    justify-content: space-evenly;
+    gap: 0.5rem ; 
+    margin-top: 2rem;   
+    margin-bottom: 2rem;
+
+}
+
+.Delivery {
+    background: url(../img/delivery.png) no-repeat center;
+    background-size: cover;
+    height: 100%;
+}
+
+.ranking {
+    flex-direction: column;
+    height: 100%;
+    background: url(../img/Rectangle\ 2.png) no-repeat center;
+    background-size: cover;
+}
+
+.Delivery h2 {
+    padding: 3rem;
+}
+
+.Delivery, .ranking{
+    border-radius: 10px;
+    height: 465.7142857142857px;
+    width: 652px;
+}
+
+.Top-5 {
+display: flex;
+justify-content: center;
+}
+
+.Top-5 li {
+    font-size: 16px;
+    line-height: 2em;
+}
+
+.ranking h2{
+    padding: 2rem;
+    text-align: center;
+}
+
+.ranking h3 {
+    padding: 2rem;
+    text-align: center;
+}
+
+
+.Ranking-title {
+    color:black;
+}
+
